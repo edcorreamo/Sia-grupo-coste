@@ -20,14 +20,16 @@ public class Carrera {
         this.setEstudiantes(estudiantes);
     }
     
+    
+    
     //Get
-    public List<Facultad> geteFacultad(){
+    public List<Facultad> getFacultad(){
     return this.efacultad;
     }
     public List<Estudiante> getEstudiantes(){
     return this.estudiantes;
     }
-    public String getNombres(){
+    public String getNombre(){
     return this.nombres;
     }
     //Set
@@ -41,4 +43,12 @@ public class Carrera {
     this.estudiantes=estudiantes;
     
     }
+    @Override
+    public String toString(){
+        String printer="nombre: "+this.getNombre()+"/n"+ "facultad: "+ getFacultad()+"/n estudientes: "+getEstudiantes();
+    return printer;
+    }
+        
+    
+    
 }
