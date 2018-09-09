@@ -1,5 +1,5 @@
 
-package SIA;
+package data;
 
 import java.util.Date;
 import java.util.List;
@@ -14,7 +14,7 @@ public class Docente {
     private Date fechaNacimiento;
     private List<Grupo> grupoclase;
     
-    public Docente(Nota nota,int id,String usuario,String nombre, String apellido,Date fechaNacimiento,List<Grupo> grupoclase){
+    public Docente(int id,String usuario,String nombre, String apellido,Date fechaNacimiento,List<Grupo> grupoclase,Nota nota){
         this.setApellido(apellido);
         this.setFechaNacimiento(fechaNacimiento);
         this.setId(id);
