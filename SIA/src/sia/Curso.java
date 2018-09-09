@@ -11,6 +11,19 @@ public class Curso {
    private List<Grupo> ofrecido;
    private List<Carrera> carreras;
    
+   public Curso(int numero,String nombre, List<Grupo> ofrecido, List<Carrera> carreras){
+       this.setNumero(numero);
+       this.setNombre(nombre);
+       this.setOfrecido(ofrecido);
+       this.setCarreras(carreras);
+   }
+   
+   public Curso(int numero,String nombre, List<Carrera> carreras){
+       this.setNumero(numero);
+       this.setNombre(nombre);
+       this.setCarreras(carreras);
+   }
+   
    //Get
    public int getNumero(){
    return this.numero;

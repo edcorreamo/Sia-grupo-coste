@@ -13,6 +13,35 @@ public class Docente {
     private String apellido;
     private Date fechaNacimiento;
     private List<Grupo> grupoclase;
+    
+    public Docente(Nota nota,int id,String usuario,String nombre, String apellido,Date fechaNacimiento,List<Grupo> grupoclase){
+        this.setApellido(apellido);
+        this.setFechaNacimiento(fechaNacimiento);
+        this.setId(id);
+        this.setNombre(nombre);
+        this.setNota(nota);
+        this.setUsuario(usuario);
+        this.setgrupoclase(grupoclase);
+    }
+    
+    public Docente(int id,String usuario,String nombre, String apellido,Date fechaNacimiento,List<Grupo> grupoclase){
+        this.setApellido(apellido);
+        this.setFechaNacimiento(fechaNacimiento);
+        this.setId(id);
+        this.setNombre(nombre);
+        this.setUsuario(usuario);
+        this.setgrupoclase(grupoclase);
+    }
+    
+    public Docente(int id,String usuario,String nombre, String apellido,Date fechaNacimiento){
+        this.setApellido(apellido);
+        this.setFechaNacimiento(fechaNacimiento);
+        this.setId(id);
+        this.setNombre(nombre);
+        this.setUsuario(usuario);
+    }
+    
+    
     //Get
     public Nota getNota(){
     return this.nota;

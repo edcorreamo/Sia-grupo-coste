@@ -9,6 +9,17 @@ public class Carrera {
     private String nombres;
     private List<Facultad> efacultad;
     private List<Estudiante> estudiantes;
+        
+    public Carrera(String nombre, List efacultad, List estudiantes){
+        this.setNombre(nombre);
+        this.setEstudiantes(estudiantes);
+        this.seteFacultad(efacultad);
+    }
+    public Carrera(String nombre,List estudiantes){
+        this.setNombre(nombre);
+        this.setEstudiantes(estudiantes);
+    }
+    
     //Get
     public List<Facultad> geteFacultad(){
     return this.efacultad;
