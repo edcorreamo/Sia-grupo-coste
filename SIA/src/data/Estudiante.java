@@ -15,7 +15,7 @@ public class Estudiante {
     private Date fechaNacimiento;
     private List<Grupo> asistencia;
      //CONSTRUCTOR
-    public Estudiante(  Nota nota,double papa,int id,String usuario,String nombre,
+    public Estudiante(Nota nota,double papa,int id,String usuario,String nombre,
             String apellido,Date fechaNacimiento,List<Grupo> asistencia){
     
    this.setNota(nota);
