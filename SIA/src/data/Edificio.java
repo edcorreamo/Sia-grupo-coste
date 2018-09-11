@@ -7,7 +7,6 @@ public class Edificio {
     private int numero;
     private String nombre;
     private List<Carrera> carreras;
-  
     private List<Salon> salones;
     
     //CONSTRUCTOR
@@ -61,12 +60,10 @@ public class Edificio {
     
     
         }
-        
+            
   @Override
    public String toString(){
-   String printer="Nombre: "+this.getNombre()+"/n"+ "Carreras: "+ getCarreras()+"/n Numero: "+getNumero()+"/n"
-          +"/n"+"Salones: "+getSalones();
-         
+   String printer="Nombre: "+this.getNombre()+"\n"+ "Carreras: "+ getCarreras()+"\nNumero: "+getNumero()+"\n"+"Salones: "+getSalones();
     return printer;
     }       
         

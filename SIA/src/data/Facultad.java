@@ -68,8 +68,8 @@ public class Facultad {
         
        @Override
    public String toString(){
-   String printer="nombre: "+this.getNombre()+"/n"+ "Estudiantes: "+ getEstudiantes()+"/n Carreras: "+getCarreras()+"/n"
-           + "Edificios: "+getEdificios()+"/n"+"Docentes : "+getDocentes();
+   String printer="Nombre: "+getNombre()+" \n"+ "Estudiantes: "+ getEstudiantes()+"\n"+ "Carreras: "+getCarreras()+"\n"
+           + "Edificios: "+getEdificios()+"\n"+"Docentes : "+getDocentes();
     return printer;
     }  
         

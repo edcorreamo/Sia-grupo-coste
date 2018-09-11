@@ -1,7 +1,7 @@
 
 
 package LogicBusiness;
-
+import java.util.Scanner;
 import data.Carrera;
 import data.Curso;
 import data.Docente;
@@ -11,19 +11,20 @@ import data.Facultad;
 import data.Grupo;
 import data.Nota;
 import data.Salon;
-import java.util.Scanner;
 
 public class Asignacion{    
     public static void ingreso(){ 
-        //Estudiantes
-   Estudiante ramiro=new Estudiante(5.2,4,"jj",null,null,null,"ramirez",null);
-   Estudiante luisa=new Estudiante(5.2,3,"ju",null,null,null,"rodriguez",null);
+        Scanner entrada= new Scanner(System.in);
+        int x;
+   //Estudiantes
+   Estudiante maria=new Estudiante(4.2,33205299,"marola22","Maria",null,null,"Rodriguez Lara",null);
+   Estudiante luisa=new Estudiante(3.9,23145678,"luisav11","Luisa",null,null,"Vasquez",null);
     //Facultad
-    Facultad ingenieria=new Facultad("ingenieria",null,null,null,null);
-    Facultad ciencias=new Facultad("ciencias",null,null,null,null);
+    Facultad ingenieria=new Facultad("Ingenieria",null,null,null,null);
+    Facultad ciencias=new Facultad("Ciencias",null,null,null,null);
     //Edificio
     Edificio julioGaravito=new Edificio(401,"Julio Garavito",null,null);
-    Edificio fem=new Edificio(401,"Julio Garavito",null,null);
+    Edificio fem=new Edificio(404,"Fisica Estadistica y Matematicas",null,null);
     //Carreras
     Carrera ingenieriaElectronica = new Carrera("ingenieria electronica",null,null);
     Carrera matematicas =new Carrera("matematicas",null,null);
@@ -42,40 +43,56 @@ public class Asignacion{
     //Grupos
     Grupo objetos12=new Grupo(22012, null,null, "segundosemestre", poo12, null,null,null);
     Grupo objetos15=new Grupo(22015, null,null, poo12, null,null,null);
-        
     
-    System.out.println(ramiro);
-    
-      Scanner ingresar=new Scanner(System.in);  
-        int x;
-         do{
-         System.out.println("Por favor vea nuestro menu: elija una opcion");
-         System.out.println("1. Estudiantes");
-         System.out.println("2. Carrera");
-         System.out.println("3. Cursos");
-         System.out.println("4. Docentes");
-         System.out.println("5. Edificios");
-         System.out.println("6. Grupos");
-         System.out.println("7. Notas");
-         System.out.println("8. Salones");
-         System.out.println("9. Facultades");
-         System.out.println("0. Salir ");
-         x=ingresar.nextInt();
-        
-         switch(x){
-            case 1:System.out.println(ramiro);System.out.println(luisa);break;     
-            case 2:  
-            case 3:
-            case 4:
-            case 5:
-            case 6: System.out.println(julioGaravito);System.out.println(fem);break;
-            case 7:
-            case 8:
-            case 9: System.out.println(ingenieria);System.out.println(ciencias);break;
-            case 0:
-            default :break;
-          }
+        System.out.println("Bienvenido a la Universidad Nacional de Colombia");
+        System.out.println("Acontinuacion se le presenta un menú de opciones para que pueda "
+                + "visualizar las distintas dependencias del campus. Escoja el numero correspondiente a su opción.");
+        System.out.println("1. Estudiante");
+        System.out.println("2. Docentes");
+        System.out.println("3. Grupos");
+        System.out.println("4. Cursos");
+        System.out.println("5. Facultades");
+        System.out.println("6. Salones");
+        System.out.println("7. Edificios");
+        System.out.println("8. Notas");
+        System.out.println("9. Carreras");
+        System.out.println("0. Salir");
+        do{
+            x=entrada.nextInt();
+        switch(x){
+            
+        case 1:System.out.println("\nESTUDIANTES:");
+               System.out.println("----------");
+               System.out.println(maria);
+               System.out.println("----------");
+               System.out.println(luisa);
+               System.out.println("----------");
+               break;
+        case 2:
+        case 3:
+        case 4:
+        case 5:System.out.println("\nFACULTADES:");
+               System.out.println("----------");
+               System.out.println(ingenieria);
+               System.out.println("---------");
+               System.out.println(ciencias);
+               System.out.println("----------");
+               break;
+        case 6:
+            
+        case 7:System.out.println("\nEDIFICIOS:");
+               System.out.println("----------");
+               System.out.println(julioGaravito);
+               System.out.println("----------");
+               System.out.println(fem);
+               System.out.println("----------");
+                break;
+        case 8:
+        case 9:
+        default: break;
+        }
        }while(x!=0);
     }
-    }    
- 
+    
+ }
+        

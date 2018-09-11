@@ -97,12 +97,12 @@ public class Estudiante {
     public void setAsistencia(List<Grupo> asistencia){
     this.asistencia=asistencia;
     }
-    
+   
  @Override
    public String toString(){
-   String printer="nombre: "+this.getNombre()+"/n"+ "Nota: "+ getNota()+"/n Papa: "+getPapa()+"/n"
-           + "Apellido: "+getApellido()+"/n"+"Fecha de Nacimiento: "+getFechaNacimiento()+"/n"
-           +"Usuario: "+getUsuario()+"/n"+"Asistencia: "+getAsistencia()+"/n"+getId();
+   String printer=  "Nombre: "+getNombre()+"\n"+ "Nota: "+ getNota()+"\n"+"PAPA: "+getPapa()+"\n"
+           + "Apellido: "+getApellido()+"\n"+"Fecha de Nacimiento: "+getFechaNacimiento()+"\n"
+           +"Usuario: "+getUsuario()+"\n"+"Asistencia: "+getAsistencia()+"\n"+"Identificacion: "+getId();
     return printer;
     }
 }
