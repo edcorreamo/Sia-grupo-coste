@@ -6,6 +6,17 @@ public class Nota {
     private List<Grupo> grupo;
     private List<Estudiante> alumno;
     
+    public Nota (double nota, List<Grupo> grupo, List<Estudiante> alumno){
+       this.setNota(nota);
+       this.setGrupo(grupo);
+       this.setAlumno(alumno);
+    }
+    
+    public Nota (double nota, List<Estudiante> alumno){
+       this.setNota(nota);
+       this.setAlumno(alumno);
+    } 
+    
     public double getNota(){
     return this.nota;
     }
@@ -15,13 +26,13 @@ public class Nota {
     public List<Estudiante> getAlumno(){
     return this.alumno;
     }
-    public void setnota(double nota){
+    public void setNota(double nota){
     this.nota=nota;
     }
     public void setGrupo(List<Grupo> grupo){
     this.grupo=grupo;
     }
-    public void setEstudiante(List<Estudiante> alumno){
+    public void setAlumno(List<Estudiante> alumno){
     this.alumno=alumno;
     }
     

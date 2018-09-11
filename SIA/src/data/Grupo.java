@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Grupo {
     //Atributos
-    private long numero;
+    private int numero;
     private String[] diasdesemana;
     private String[] horario;
     private String semestre;
@@ -14,6 +14,28 @@ public class Grupo {
     private Docente dictadopor;
     private List<Estudiante> asistidopor;
     private Nota nota;
+    
+        public Grupo(int numero, String[] diasdesemana, String[] horario, String semestre, Curso representante, Docente dictadopor, List<Estudiante> asistidopor, Nota nota){
+        this.setNumero(numero);
+        this.setAsistidopor(asistidopor);
+        this.setDiasdesemana(diasdesemana);
+        this.setHorario(horario);
+        this.setSemestre(semestre);
+        this.setRepresentante(representante);
+        this.setDictadopor(dictadopor);
+        this.setNota(nota);               
+    }
+    
+    public Grupo(int numero, String[] diasdesemana, String[] horario, Curso representante, Docente dictadopor, List<Estudiante> asistidopor, Nota nota){
+        this.setNumero(numero);
+        this.setAsistidopor(asistidopor);
+        this.setDiasdesemana(diasdesemana);
+        this.setHorario(horario);
+        this.setRepresentante(representante);
+        this.setDictadopor(dictadopor);
+        this.setNota(nota);               
+    }
+    
    //Get
     public Nota getNota(){
     return this.nota;

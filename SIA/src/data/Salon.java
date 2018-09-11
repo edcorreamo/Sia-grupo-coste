@@ -9,6 +9,20 @@ public class Salon {
     private Edificio edificios;
     private List<Curso> cursos;
     private List<Facultad> facultad;
+    
+        public Salon(int numero, Edificio edificios, List<Curso> cursos, List<Facultad> facultad){
+        this.setNumero (numero);
+        this.setEdificios(edificios);
+        this.setFacultad(facultad);
+        this.setCursos(cursos);
+    }
+    
+    public Salon(int numero, Edificio edificios, List<Curso> cursos){
+        this.setNumero (numero);
+        this.setEdificios(edificios);
+        this.setCursos(cursos);
+    }
+    
     //Get 
         public List<Curso> getCursos(){
         return this.cursos;
@@ -33,7 +47,7 @@ public class Salon {
         public void setCursos(List<Curso> cursos){
         this.cursos=cursos;
         }
-        public void setnumero(int numero){
+        public void setNumero(int numero){
         this.numero=numero;
     
     
