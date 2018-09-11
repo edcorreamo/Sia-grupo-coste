@@ -20,7 +20,6 @@ public class Grupo {
         this.setAsistidopor(asistidopor);
         this.setDiasdesemana(diasdesemana);
         this.setHorario(horario);
-       
         this.setCurso(curso);
         this.setDictadopor(dictadopor);
         this.setNota(nota);               
