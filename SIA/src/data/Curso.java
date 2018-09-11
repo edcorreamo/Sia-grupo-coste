@@ -3,14 +3,14 @@ package data;
 
 import java.util.List;
 
-//Pendiente
+
 public class Curso {
     //Atributos
    private int numero;
    private String nombre;
    private List<Grupo> ofrecido;
    private List<Carrera> carreras;
-   
+   //CONSTRUCTOR
    public Curso(int numero,String nombre, List<Grupo> ofrecido, List<Carrera> carreras){
        this.setNumero(numero);
        this.setNombre(nombre);
@@ -51,6 +51,12 @@ public class Curso {
    public void setCarreras(List<Carrera> carreras){
    this.carreras=carreras;
    }
+   @Override
+   public String toString(){
+   String printer="nombre: "+this.getNombre()+"/n"+ "Numero: "+ getNumero()+"/n Ofrecido: "+getOfrecido()+"/n"
+           + "Carrera: "+getCarreras();
+    return printer;
    }
    
-
+   }
+   

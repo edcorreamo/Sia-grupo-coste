@@ -9,7 +9,7 @@ public class Salon {
     private Edificio edificios;
     private List<Curso> cursos;
     private List<Facultad> facultad;
-    
+    //CONSTRUCTOR
         public Salon(int numero, Edificio edificios, List<Curso> cursos, List<Facultad> facultad){
         this.setNumero (numero);
         this.setEdificios(edificios);
@@ -52,4 +52,13 @@ public class Salon {
     
     
         }
+        
+      @Override
+   public String toString(){
+   String printer="Numero: "+this.getNumero()+"/n"+ "Edificios: "+ getEdificios()+"/n Cursos: "+getCursos()+"/n"
+           + "Facultad: "+getFacultad();
+    return printer;
+    }  
+        
+        
 }

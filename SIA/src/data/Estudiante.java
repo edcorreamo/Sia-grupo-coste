@@ -14,7 +14,20 @@ public class Estudiante {
     private String apellido;
     private Date fechaNacimiento;
     private List<Grupo> asistencia;
+     //CONSTRUCTOR
+    public Estudiante(  Nota nota,double papa,int id,String usuario,String nombre,
+            String apellido,Date fechaNacimiento,List<Grupo> asistencia){
     
+   this.setNota(nota);
+   this.setPapa(papa);
+   this.setId(id);
+   this.setUsuario(usuario);
+   this.setNombre(nombre);
+   this.setApellido(apellido);
+   this.setFechaNacimiento(fechaNacimiento);
+   this.setAsistencia(asistencia);
+    } 
+                     
     //Get
     public Nota getNota(){
     return this.nota;
@@ -67,4 +80,11 @@ public class Estudiante {
     this.asistencia=asistencia;
     }
     
+ @Override
+   public String toString(){
+   String printer="nombre: "+this.getNombre()+"/n"+ "Nota: "+ getNota()+"/n Papa: "+getPapa()+"/n"
+           + "Apellido: "+getApellido()+"/n"+"Fecha de Nacimiento: "+getFechaNacimiento()+"/n"
+           +"Usuario: "+getUsuario()+"/n"+"Asistencia: "+getAsistencia()+"/n"+getId();
+    return printer;
+    }
 }

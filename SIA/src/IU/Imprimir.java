@@ -18,9 +18,9 @@ public class Imprimir {
          System.out.println("1. revisar estudiantes");
          System.out.println("2. revisar carrera");
          System.out.println("3. revisar cursos");
-         System.out.println("4. revisar docentes");
-         System.out.println("5. revisar edificios");
-         System.out.println("6. vrevisar grupos");
+         System.out.println("4. Revisar docentes");
+         System.out.println("5. Revisar edificios");
+         System.out.println("6. Revisar grupos");
          System.out.println("7. revisar notas");
          System.out.println("8. Salones");
          System.out.println("9. faultades");
@@ -30,7 +30,7 @@ public class Imprimir {
          switch(x){
             
             case 1:
-            case 2: resultado=matematicas.toString(); System.out.println(resultado);break;
+            case 2: //resultado=matematicas.toString(); System.out.println(resultado);break;
             case 3:
             case 4:
             case 5:

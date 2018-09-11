@@ -14,6 +14,7 @@ public class Docente {
     private Date fechaNacimiento;
     private List<Grupo> grupoclase;
     
+    //CONSTRUCTOR
     public Docente(int id,String usuario,String nombre, String apellido,Date fechaNacimiento,List<Grupo> grupoclase,Nota nota){
         this.setApellido(apellido);
         this.setFechaNacimiento(fechaNacimiento);
@@ -85,6 +86,12 @@ public class Docente {
      }
     public void setgrupoclase(List<Grupo> grupoclase){
     this.grupoclase=grupoclase;
+    }
+    @Override
+   public String toString(){
+   String printer="nombre: "+this.getNombre()+"/n"+ "Apellido: "+ getApellido()+"/n Usuario: "+getUsuario()+"/n"
+           + "Apellido: "+getApellido()+"/n"+"Fecha de Nacimiento: "+getFechaNacimiento();
+    return printer;
     }
     
 }

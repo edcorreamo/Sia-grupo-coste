@@ -9,6 +9,19 @@ public class Facultad {
         private List<Carrera> carreras;
         private List<Edificio> edificios;
         private List<Docente> docentes;
+        
+         //CONSTRUCTOR
+        public Facultad(String nombre,List<Estudiante> estudiantes,List<Carrera> carreras,
+                List<Edificio> edificios,List<Docente>docentes){
+    
+   this.setNombre(nombre);
+   this.setEstudiantes(estudiantes);
+   this.setEdificios(edificios);
+   this.setDocentes(docentes);
+   this.setNombre(nombre);
+    } 
+        
+        
     //Get
         
         public String getNombre(){
@@ -43,7 +56,12 @@ public class Facultad {
         this.docentes=docentes;
         }
         
-        
+       @Override
+   public String toString(){
+   String printer="nombre: "+this.getNombre()+"/n"+ "Estudiantes: "+ getEstudiantes()+"/n Carreras: "+getCarreras()+"/n"
+           + "Edificios: "+getEdificios()+"/n"+"Docentes : "+getDocentes();
+    return printer;
+    }  
         
         
         

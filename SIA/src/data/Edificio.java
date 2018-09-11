@@ -7,8 +7,18 @@ public class Edificio {
     private int numero;
     private String nombre;
     private List<Carrera> carreras;
-    private List<Curso> cursos;
+  
     private List<Salon> salones;
+    
+    //CONSTRUCTOR
+   public Edificio(int numero,String nombre,List<Carrera> carreras,List<Salon> salones){
+    
+   this.setSalones(salones);
+   this.setCarreras(carreras);
+   this.setNumero(numero);
+   this.setNombre(nombre);
+   
+    } 
     
     //Get
        public String getNombre(){
@@ -17,9 +27,7 @@ public class Edificio {
         public List<Carrera> getCarreras(){
         return this.carreras;
         }
-        public List<Curso>  getCursos(){
-        return this.cursos;
-        }
+       
         public List<Salon> getSalones(){
         return this.salones;
         }
@@ -36,12 +44,21 @@ public class Edificio {
         public void setCarreras(List<Carrera> carreras){
         this.carreras=carreras;
         }
-        public void setEdificios(List<Curso> cursos ){
-        this.cursos=cursos;
-        }
+       
         public void setNumero(int numero){
         this.numero=numero;
     
     
         }
+        
+  @Override
+   public String toString(){
+   String printer="Nombre: "+this.getNombre()+"/n"+ "Carreras: "+ getCarreras()+"/n Numero: "+getNumero()+"/n"
+          +"/n"+"Salones: "+getSalones();
+         
+    return printer;
+    }       
+        
+        
+        
 }

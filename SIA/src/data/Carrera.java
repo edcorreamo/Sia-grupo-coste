@@ -3,13 +3,14 @@ package data;
 
 import java.util.List;
 
-
 public class Carrera {
     //Atributos
     private String nombres;
     private List<Facultad> efacultad;
     private List<Estudiante> estudiantes;
         
+    
+   //CONSTRUCTOR
     public Carrera(String nombre, List efacultad, List estudiantes){
         this.setNombre(nombre);
         this.setEstudiantes(estudiantes);
@@ -19,7 +20,6 @@ public class Carrera {
         this.setNombre(nombre);
         this.setEstudiantes(estudiantes);
     }
-    
     
     
     //Get
