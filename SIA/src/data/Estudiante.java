@@ -15,19 +15,37 @@ public class Estudiante {
     private Date fechaNacimiento;
     private List<Grupo> asistencia;
      //CONSTRUCTOR
-    public Estudiante(Nota nota,double papa,int id,String usuario,String nombre,
-            String apellido,Date fechaNacimiento,List<Grupo> asistencia){
-    
-   this.setNota(nota);
-   this.setPapa(papa);
+   public Estudiante(double papa,int id,String usuario,String nombre,Date fechaNacimiento,Nota nota,
+           String apellido,List<Grupo> asistencia){
    this.setId(id);
    this.setUsuario(usuario);
    this.setNombre(nombre);
    this.setApellido(apellido);
    this.setFechaNacimiento(fechaNacimiento);
+   this.setNota(nota);
+   this.setPapa(papa);
+   this.setAsistencia(asistencia);
+    }
+    public Estudiante(double papa,int id,String usuario,String nombre,String apellido,Date fechaNacimiento){
+   this.setId(id);
+   this.setUsuario(usuario);
+   this.setNombre(nombre);
+   this.setApellido(apellido);
+   this.setFechaNacimiento(fechaNacimiento);
+    }
+    //SOBRECARGAS
+   public Estudiante(Nota nota,String apellido,List<Grupo> asistencia){
+   this.setNota(nota);
+   this.setPapa(papa);
    this.setAsistencia(asistencia);
     } 
-                     
+    public Estudiante(){
+   this.setId(-1);
+   this.setUsuario("INDEFINIDO");
+   this.setNombre("INDEFINIDO");
+   this.setApellido("INDEFINIDO");
+   this.setPapa(-1);
+    } 
     //Get
     public Nota getNota(){
     return this.nota;

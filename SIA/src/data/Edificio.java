@@ -12,12 +12,23 @@ public class Edificio {
     
     //CONSTRUCTOR
    public Edificio(int numero,String nombre,List<Carrera> carreras,List<Salon> salones){
-    
    this.setSalones(salones);
    this.setCarreras(carreras);
    this.setNumero(numero);
    this.setNombre(nombre);
-   
+    } 
+   //SOBRECARGAS
+   public Edificio(int numero,String nombre){
+   this.setNumero(numero);
+   this.setNombre(nombre);
+    }
+    public Edificio(List<Carrera> carreras,List<Salon> salones){
+   this.setSalones(salones);
+   this.setCarreras(carreras);
+    } 
+    public Edificio(){
+   this.setNumero(-1);
+   this.setNombre("INDEFINIDO");
     } 
     
     //Get

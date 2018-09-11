@@ -10,17 +10,27 @@ public class Facultad {
         private List<Edificio> edificios;
         private List<Docente> docentes;
         
-         //CONSTRUCTOR
-        public Facultad(String nombre,List<Estudiante> estudiantes,List<Carrera> carreras,
-                List<Edificio> edificios,List<Docente>docentes){
-    
+    //CONSTRUCTOR
+   public Facultad(String nombre,List<Estudiante> estudiantes,List<Carrera> carreras,List<Edificio> edificios,List<Docente>docentes){
    this.setNombre(nombre);
    this.setEstudiantes(estudiantes);
    this.setEdificios(edificios);
    this.setDocentes(docentes);
-   this.setNombre(nombre);
+   this.setCarreras(carreras);
     } 
-        
+   //SOBRECARGA
+   public Facultad(String nombre,List<Estudiante> estudiantes,List<Docente>docentes){
+   this.setNombre(nombre);
+   this.setEstudiantes(estudiantes);
+   this.setDocentes(docentes);
+    }
+   public Facultad(List<Carrera> carreras,List<Edificio> edificios){
+  this.setEdificios(edificios);
+   this.setCarreras(carreras);
+    }
+   public Facultad(){
+   this.setNombre("INDEFINED");
+   } 
         
     //Get
         
