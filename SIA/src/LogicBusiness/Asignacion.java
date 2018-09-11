@@ -15,7 +15,8 @@ public class Asignacion{
     public static void ingreso(){
         
     //Estudiantes
-    Estudiante ramiro=new Estudiante(null,3.5,1001936613,null,null,null,null,null);
+     Estudiante ramiro=new Estudiante(null,3.5,1001936613,null,"Ramiro","Ramiro",null,null);
+   
    Estudiante luisa=new Estudiante(null,3.4,1001936612,null,null,null,null,null);
     //Facultad
     Facultad ingenieria=new Facultad("ingenieria",null,null,null,null);
