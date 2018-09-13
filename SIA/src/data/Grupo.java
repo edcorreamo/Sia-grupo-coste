@@ -9,7 +9,6 @@ public class Grupo {
     private int numero;
     private String[] diasdesemana;
     private String[] horario;
-    
     private Curso curso;
     private Docente dictadopor;
     private List<Estudiante> asistidopor;
@@ -35,11 +34,21 @@ public class Grupo {
         this.setNota(nota);               
     }
     
+    public Grupo(){
+        this.setNumero(-1);
+        this.setAsistidopor(asistidopor);
+        this.setDiasdesemana(diasdesemana);
+        this.setHorario(horario);
+        this.setCurso(curso);
+        this.setDictadopor(dictadopor);
+        this.setNota(nota);               
+    }
+    
    //Get
     public Nota getNota(){
     return this.nota;
     }
-    public long getNumero(){
+    public int getNumero(){
     return this.numero;
     }
     public String[] getDiasdesemana(){

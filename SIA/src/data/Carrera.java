@@ -23,8 +23,8 @@ public class Carrera {
     
     public Carrera(){
         this.setNombre("INDEFINIDO");
-        this.setEstudiantes(null);
-        this.seteFacultad(null);
+        this.setEstudiantes(estudiantes);
+        this.seteFacultad(efacultad);
     }
     
     

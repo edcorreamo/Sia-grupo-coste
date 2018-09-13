@@ -45,11 +45,11 @@ public class Docente {
     public Docente(){
         this.setNota(null);
         this.setApellido("INDEFINIDO");
-        this.setFechaNacimiento(null);
+        this.setFechaNacimiento(fechaNacimiento);
         this.setId(-1);
         this.setNombre("INDEFINIDO");
         this.setUsuario("INDEFINIDO");
-        this.setgrupoclase(null);
+        this.setgrupoclase(grupoclase);
     }
     
     //Get

@@ -45,9 +45,9 @@ public class Estudiante {
    this.setNombre("INDEFINIDO");
    this.setApellido("INDEFINIDO");
    this.setPapa(-1);
-   this.setNota(null);
-   this.setFechaNacimiento(null);
-   this.setAsistencia(null);
+   this.setNota(nota);
+   this.setFechaNacimiento(fechaNacimiento);
+   this.setAsistencia(asistencia);
     } 
     //Get
     public Nota getNota(){

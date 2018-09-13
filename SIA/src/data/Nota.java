@@ -16,6 +16,11 @@ public class Nota {
        this.setNota(nota);
        this.setAlumno(alumno);
     } 
+    public Nota (){
+       this.setNota(-1);
+       this.setGrupo(grupo);
+       this.setAlumno(alumno);
+    }
     
     public double getNota(){
     return this.nota;

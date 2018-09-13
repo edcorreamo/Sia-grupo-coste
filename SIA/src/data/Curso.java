@@ -27,8 +27,8 @@ public class Curso {
    public Curso(){
        this.setNumero(-1);
        this.setNombre("INDEFINIDO");
-       this.setOfrecido(null);
-       this.setCarreras(null);
+       this.setOfrecido(ofrecido);
+       this.setCarreras(carreras);
    }
    
    //Get

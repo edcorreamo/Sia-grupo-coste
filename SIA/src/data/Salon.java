@@ -23,6 +23,13 @@ public class Salon {
         this.setCursos(cursos);
     }
     
+    public Salon(){
+        this.setNumero (-1);
+        this.setEdificios(edificios);
+        this.setFacultad(facultad);
+        this.setCursos(cursos);
+    }
+        
     //Get 
         public List<Curso> getCursos(){
         return this.cursos;
