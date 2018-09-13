@@ -78,7 +78,8 @@ public class Asignacion{
                System.out.println(ciencias);
                System.out.println("----------");
                break;
-        case 6:
+        case 6:System.out.println("hola mundo");
+            System.out.println("costeño hijueputa");
             
         case 7:System.out.println("\nEDIFICIOS:");
                System.out.println("----------");
