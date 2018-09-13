@@ -37,8 +37,8 @@ public class Grupo {
     public Grupo(){
         this.setNumero(-1);
         this.setAsistidopor(asistidopor);
-        this.setDiasdesemana(diasdesemana);
-        this.setHorario(horario);
+        this.setDiasdesemana(null);
+        this.setHorario(null);
         this.setCurso(curso);
         this.setDictadopor(dictadopor);
         this.setNota(nota);               
