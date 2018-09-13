@@ -45,7 +45,7 @@ public class Carrera {
     }
     @Override
     public String toString(){
-        String printer="nombre: "+this.getNombre()+"/n"+ "facultad: "+ getFacultad()+"/n estudientes: "+getEstudiantes();
+        String printer="Nombre: "+this.getNombre()+"\n"+ "Facultad: "+ getFacultad()+"\nEstudientes: "+getEstudiantes();
     return printer;
     }
         
