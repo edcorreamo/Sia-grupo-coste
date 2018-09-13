@@ -89,8 +89,8 @@ public class Docente {
     }
     @Override
    public String toString(){
-   String printer="nombre: "+this.getNombre()+"/n"+ "Apellido: "+ getApellido()+"/n Usuario: "+getUsuario()+"/n"
-           + "Apellido: "+getApellido()+"/n"+"Fecha de Nacimiento: "+getFechaNacimiento();
+   String printer="Nombre: "+getNombre()+"\n"+ "Apellido: "+ getApellido()+"\nUsuario: "+getUsuario()+"\n"
+           + "Apellido: "+getApellido()+"\n"+"Fecha de Nacimiento: "+getFechaNacimiento();
     return printer;
     }
     

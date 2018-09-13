@@ -53,7 +53,7 @@ public class Curso {
    }
    @Override
    public String toString(){
-   String printer="nombre: "+this.getNombre()+"/n"+ "Numero: "+ getNumero()+"/n Ofrecido: "+getOfrecido()+"/n"
+   String printer="Nombre: "+this.getNombre()+"\n"+ "Numero: "+ getNumero()+"\nOfrecido: "+getOfrecido()+"\n"
            + "Carrera: "+getCarreras();
     return printer;
    }
