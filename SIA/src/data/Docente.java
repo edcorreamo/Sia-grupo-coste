@@ -42,6 +42,15 @@ public class Docente {
         this.setUsuario(usuario);
     }
     
+    public Docente(){
+        this.setNota(null);
+        this.setApellido("INDEFINIDO");
+        this.setFechaNacimiento(null);
+        this.setId(-1);
+        this.setNombre("INDEFINIDO");
+        this.setUsuario("INDEFINIDO");
+        this.setgrupoclase(null);
+    }
     
     //Get
     public Nota getNota(){

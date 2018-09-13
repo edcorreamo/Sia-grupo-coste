@@ -30,6 +30,10 @@ public class Facultad {
     }
    public Facultad(){
    this.setNombre("INDEFINED");
+   this.setEstudiantes(estudiantes);
+   this.setEdificios(edificios);
+   this.setDocentes(docentes);
+   this.setCarreras(carreras);
    } 
         
     //Get

@@ -36,7 +36,7 @@ public class Estudiante {
     //SOBRECARGAS
    public Estudiante(Nota nota,String apellido,List<Grupo> asistencia){
    this.setNota(nota);
-   this.setPapa(papa);
+   this.setApellido(apellido);
    this.setAsistencia(asistencia);
     } 
     public Estudiante(){
@@ -45,6 +45,9 @@ public class Estudiante {
    this.setNombre("INDEFINIDO");
    this.setApellido("INDEFINIDO");
    this.setPapa(-1);
+   this.setNota(null);
+   this.setFechaNacimiento(null);
+   this.setAsistencia(null);
     } 
     //Get
     public Nota getNota(){

@@ -28,6 +28,8 @@ public class Edificio {
     public Edificio(){
    this.setNumero(-1);
    this.setNombre("INDEFINIDO");
+   this.setSalones(null);
+   this.setCarreras(null);
     } 
     
     //Get

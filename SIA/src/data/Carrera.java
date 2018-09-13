@@ -21,6 +21,12 @@ public class Carrera {
         this.setEstudiantes(estudiantes);
     }
     
+    public Carrera(){
+        this.setNombre("INDEFINIDO");
+        this.setEstudiantes(null);
+        this.seteFacultad(null);
+    }
+    
     
     //Get
     public List<Facultad> getFacultad(){

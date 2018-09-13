@@ -24,6 +24,13 @@ public class Curso {
        this.setCarreras(carreras);
    }
    
+   public Curso(){
+       this.setNumero(-1);
+       this.setNombre("INDEFINIDO");
+       this.setOfrecido(null);
+       this.setCarreras(null);
+   }
+   
    //Get
    public int getNumero(){
    return this.numero;
