@@ -37,7 +37,7 @@ public class Nota {
     }
     @Override
    public String toString(){
-   String printer="Nota: "+this.getNota()+"/n"+ "Grupo: "+ getGrupo()+"/n Alumno: "+getAlumno();
+   String printer="Nota: "+this.getNota()+"\n"+ "Grupo: "+ getGrupo()+"\n Alumno: "+getAlumno();
           
     return printer;
     }
