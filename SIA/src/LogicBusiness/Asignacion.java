@@ -68,9 +68,27 @@ public class Asignacion{
                System.out.println(luisa);
                System.out.println("----------");
                break;
-        case 2:
-        case 3:
-        case 4:
+        case 2:System.out.println("\nDOCENTES:");
+               System.out.println("----------");
+               System.out.println(guillermo);
+               System.out.println("---------");
+               System.out.println(arturo);
+               System.out.println("----------");
+               break;
+        case 3:System.out.println("\nGRUPOS:");
+               System.out.println("----------");
+               System.out.println(objetos12);
+               System.out.println("---------");
+               System.out.println(objetos15);
+               System.out.println("----------");
+               break;
+        case 4:System.out.println("\nCURSOS:");
+               System.out.println("----------");
+               System.out.println(poo12);
+               System.out.println("----------");
+               System.out.println(poo11);
+               System.out.println("----------");
+               break;
         case 5:System.out.println("\nFACULTADES:");
                System.out.println("----------");
                System.out.println(ingenieria);
@@ -78,8 +96,13 @@ public class Asignacion{
                System.out.println(ciencias);
                System.out.println("----------");
                break;
-        case 6:System.out.println("hola marica");
-               System.out.println("Cachaco malparido");
+        case 6:System.out.println("\nSALONES:");
+               System.out.println("----------");
+               System.out.println(salon454404);
+               System.out.println("----------");
+               System.out.println(salon454403);
+               System.out.println("----------");
+               break;
             
         case 7:System.out.println("\nEDIFICIOS:");
                System.out.println("----------");
@@ -88,8 +111,20 @@ public class Asignacion{
                System.out.println(fem);
                System.out.println("----------");
                 break;
-        case 8:
-        case 9:
+        case 8:System.out.println("\nNOTAS:");
+               System.out.println("----------");
+               System.out.println(programacion12);
+               System.out.println("----------");
+               System.out.println(programacion15);
+               System.out.println("----------");
+               break;
+        case 9:System.out.println("\nCARRERAS:");
+               System.out.println("----------");
+               System.out.println(ingenieriaElectronica);
+               System.out.println("----------");
+               System.out.println(matematicas);
+               System.out.println("----------");
+               break;
         default: break;
         }
        }while(x!=0);
