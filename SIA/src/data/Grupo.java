@@ -85,8 +85,8 @@ public class Grupo {
     
     @Override
    public String toString(){
-   String printer="Numero: "+this.getNumero()+"/n"+ "Asistidopor: "+ getAsistidopor()+"/n Dias de Semana: "+getDiasdesemana() +"/n"
-           + "Horario: "+getHorario()+"/n"+"Nota: "+getNota()+"/n"+"Asistidopor: "+getAsistidopor()+"/n"+"Dictadopor:"+getDictadopor();
+   String printer="Numero: "+this.getNumero()+"\n"+ "Asistidopor: "+ getAsistidopor()+"\nDias de Semana: "+getDiasdesemana() +"\n"
+           + "Horario: "+getHorario()+"\n"+"Nota: "+getNota()+"\n"+"Asistido Por: "+getAsistidopor()+"\n"+"Dictado Por:"+getDictadopor();
           
     return printer;
     }

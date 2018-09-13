@@ -55,7 +55,7 @@ public class Salon {
         
       @Override
    public String toString(){
-   String printer="Numero: "+this.getNumero()+"/n"+ "Edificios: "+ getEdificios()+"/n Cursos: "+getCursos()+"/n"
+   String printer="Numero: "+this.getNumero()+"\n"+ "Edificios: "+ getEdificios()+"\n Cursos: "+getCursos()+"\n"
            + "Facultad: "+getFacultad();
     return printer;
     }  
